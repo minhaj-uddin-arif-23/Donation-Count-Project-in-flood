@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisy ui  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    #font{
+      font-family: "Lexend", system-ui;
+    }
+  </style>
+</head>
+<body id="font">
+ <header class="w-11/12 mx-auto my-8 bg-[#F9F7F3]">
+      <nav class="flex justify-between ">
+        <div class="flex">
+          <button class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg"><a href="./blog.html" target="_blank">Blog</a></button>
+        </div>
+        <div class="flex gap-3 border-2 ">
+          <img src="./assets/logo.png" alt="">
+          <p class="font-semibold text-2xl mt-3 ">Donate Bangladesh </p>
+        </div>
+        <!-- balance decrease part -->
+            <div class="flex ">
+              <button id="balance-decrease" class="flex bg-gray-100 px-6 py-2 rounded-lg text-3xl space-x-2"> <img src="./assets/coin.png" class="mt-1" alt="">
+                <h1>3000</h1> <p>BDT</p></button>
+         
+            </div>      
+      </nav>
+ </header>
+
+ <script src="./js/index.js"></script>
+</body>
+</html>
