@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some impotant Question </title>
+  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <header class="w-11/12 mx-auto my-8 bg-[#F9F7F3]">
+    <nav class="flex justify-between ">
+      <div class="flex">
+        <button class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg"><a href="./blog.html" target="_blank">Blog</a></button>
+      </div>
+      <div class="flex gap-3 border-2 ">
+        <img src="./assets/logo.png" alt="">
+        <p class="font-semibold text-2xl mt-3 ">Donate Bangladesh </p>
+      </div>
+      <!-- balance decrease part -->
+          <div class="flex ">
+            <button class="flex bg-gray-100 px-6 py-2 rounded-lg text-3xl space-x-2"> <img src="./assets/coin.png" class="mt-1" alt="">
+              <h1 > 50</h1> <p>BDT</p></button>
+       
+          </div>      
+    </nav>
+</header>
+    <section class="w-11/12 mx-auto my-20">
+        <h1 class="font-bold text-4xl my-10">Important FAQ</h1>
+        <div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p> Doument Object model is very imortant ,because  javaScript compiler can not read our html file directly. <br>It can be read object wise.It can be a root element then child node sibling also have nodes this can be follow up javaScript object wise</p>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>There are various method we can select the element in DOM  <br>getElementById,
+                getElementsByName,
+                getElementsByClassName,
+                getElementsByTagName,
+                querySelector,
+                querySelectorAll
+                </p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">what is event delegation in the context of the DOM ,why is it useful?</div>
+            <div class="collapse-content">
+              <p>Instead of attaching a click handler to each item, event delegation allows you to attach a single listener to the parent container. <br> Delegating empowers your team, builds trust, and assists with professional development. <br> And for leaders, it helps you learn how to identify who is best suited to tackle tasks or projects</p>
+            </div>
+          </div>
+          <hr>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Using setAttribute method we can change the attributes like href ,id src. <br> Also directly change each CSS property of an element by using the style property, which <br>references the element inline styles. </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+    </section>
+</body>
+</html>
