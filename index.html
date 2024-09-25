@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     #font{
       font-family: "Lexend", system-ui;
@@ -20,7 +22,7 @@
   </style>
 </head>
 <body id="font">
-<section class="border-2 border-red-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-5 md:w-full  sticky top-0 z-50">
+<section class="border-2 border-red-100   bg-gradient-to-r from-[#F9F7F3] mb-5 md:w-full  sticky top-0 z-50">
   <header class="w-11/12 mx-auto my-8  ">
     <nav class="flex justify-between  ">
       <div class="">
@@ -28,44 +30,51 @@
       </div>
       <div class="flex gap-3 ml-14 lg:visible invisible">
         <img src="./assets/logo.png" alt="">
-        <p class="font-semibold text-3xl mt-3 text-white  ">Donate Bangladesh </p>
+        <p class="font-semibold text-3xl mt-3 text-black  ">Donate Bangladesh </p>
       </div>
       <!-- balance decrease part -->
-          <div class=" mr-6 ">
+          <div class=" mr-6">
             <button id="balance-decrease" class="flex bg-gray-100 lg:px-6 lg:py-2 rounded-lg text-2xl space-x-1 text-black  "> <img src="./assets/coin.png" class="mt-1" alt="">
-              <h1>3000</h1> <p>BDT</p></button>
+              <h1>3000</h1>  <i class="fa-solid fa-bangladeshi-taka-sign text-black mt-1"></i></button>
        
-          </div>      
+          </div> 
+               
     </nav>
+    <div class=" text-center space-x-4 my-5">
+      <button id="donation-btn"
+       class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg">Donation</button>
+      <button id="history-btn"
+       class="px-5 py-2 rounded-md  text-gray-500  border-2 border-gray-400 font-semibold ">History</button>
+        <!-- history container  -->
+         
+    <!-- History section start -->
+      <div id="history-show" class="history-section hidden">
+          <!-- <h3>History donation</h3> -->
+      <div id="history-list"></div>
+    
+        <footer id="footer" class="bg-[#F9F7F3]  p-20"></footer>
+      
+  </div>
+
+    <!-- History section end -->
+ 
+
+  </div>
 </header>
 </section>
-        <!-- two button section  -->
-      <div class=" text-center space-x-4 ">
-          <button id="donation-btn"
-           class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg">Donation</button>
-          <button id="history-btn"
-           class="px-5 py-2 rounded-md  text-gray-500  border-2 border-gray-400 font-semibold ">History</button>
-            <!-- history container  -->
-             
-        <!-- History section start -->
-          <div id="history-show" class="history-section hidden">
-              <!-- <h3>History donation</h3> -->
-          <div id="history-list"></div>
-      </div>
-
-        <!-- History section end -->
+     
      
 
       </div>
      <!-- main section -->
        <!-- Modal showing part -->
-      <dialog id="abc" class="modal p-16">
+      <dialog id="abc" class="modal p-16 lg:p-36 ">
         <div class="modal-box" id="toast">
-          <h1 class=" ml-10 text-4xl font-bold">Congrates!</h1>
-          <img class="ml-28 my-4"  src="./assets/coin.png" alt="">
-          <p class="ml-3">You have donated to humankind</p>
-          <p class="font-semibold text-xl ml-20 my-5">Successfully</p>
-          <button class="bg-base-200 px-9 py-3 rounded-md ml-10" id="close-toast">Close Confirmation</button>
+          <h1 class=" ml-10 text-4xl font-bold lg:ml-36 ">Congrates!</h1>
+          <img class="ml-28 my-4 lg:ml-56"  src="./assets/coin.png" alt="">
+          <p class="ml-3 lg:ml-28">You have donated to humankind</p>
+          <p class="font-semibold text-xl ml-20 my-5 lg:ml-44">Successfully</p>
+          <button class="bg-base-200 px-9 py-3 rounded-md ml-7 lg:ml-28" id="close-toast">Close Confirmation</button>
         </div>
       </dialog>
 
@@ -84,7 +93,7 @@
                    <!-- balance add part part -->
                     <div class="">
                       <button  id="donate-balance" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2 "> <img src="./assets/coin.png" alt="">
-                       <h1 > 5000</h1> <p>BDT</p></button>
+                       <h1 > 5000</h1><p>BDT</p></button>
                      <!-- text content -->
                     </div>
     
