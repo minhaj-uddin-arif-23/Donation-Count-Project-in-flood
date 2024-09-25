@@ -20,25 +20,27 @@
   </style>
 </head>
 <body id="font">
- <header class="w-11/12 mx-auto my-8 bg-[#F9F7F3]">
-      <nav class="flex justify-between ">
-        <div class="flex">
-          <button class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg"><a href="./blog.html" target="_blank">Blog</a></button>
-        </div>
-        <div class="flex gap-3  ">
-          <img src="./assets/logo.png" alt="">
-          <p class="font-semibold text-2xl mt-3 ">Donate Bangladesh </p>
-        </div>
-        <!-- balance decrease part -->
-            <div class="flex ">
-              <button id="balance-decrease" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" class="mt-1" alt="">
-                <h1>3000</h1> <p>BDT</p></button>
-         
-            </div>      
-      </nav>
- </header>
+<section class="border-2 border-red-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-5 md:w-full  sticky top-0 z-50">
+  <header class="w-11/12 mx-auto my-8  ">
+    <nav class="flex justify-between  ">
+      <div class="">
+        <button class="bg-[#B4F461] font-bold lg:px-6 lg:py-2  px-3 py-2 rounded-lg"><a href="./blog.html" target="">Blog</a></button>
+      </div>
+      <div class="flex gap-3 ml-14 lg:visible invisible">
+        <img src="./assets/logo.png" alt="">
+        <p class="font-semibold text-3xl mt-3 text-white  ">Donate Bangladesh </p>
+      </div>
+      <!-- balance decrease part -->
+          <div class=" mr-6 ">
+            <button id="balance-decrease" class="flex bg-gray-100 lg:px-6 lg:py-2 rounded-lg text-2xl space-x-1 text-black  "> <img src="./assets/coin.png" class="mt-1" alt="">
+              <h1>3000</h1> <p>BDT</p></button>
+       
+          </div>      
+    </nav>
+</header>
+</section>
         <!-- two button section  -->
-        <div class=" text-center space-x-4">
+      <div class=" text-center space-x-4 ">
           <button id="donation-btn"
            class="bg-[#B4F461] font-bold px-6 py-2 rounded-lg">Donation</button>
           <button id="history-btn"
@@ -46,45 +48,54 @@
             <!-- history container  -->
              
         <!-- History section start -->
-            <div id="history-show" class="history-section hidden">
+          <div id="history-show" class="history-section hidden">
               <!-- <h3>History donation</h3> -->
-              <div id="history-list"></div>
-            </div>
+          <div id="history-list"></div>
+      </div>
 
         <!-- History section end -->
      
 
       </div>
      <!-- main section -->
-     <main id="main-part" class="w-11/12 mx-auto my-10 ">
-    
+       <!-- Modal showing part -->
+      <dialog id="abc" class="modal p-16">
+        <div class="modal-box" id="toast">
+          <h1 class=" ml-10 text-4xl font-bold">Congrates!</h1>
+          <img class="ml-28 my-4"  src="./assets/coin.png" alt="">
+          <p class="ml-3">You have donated to humankind</p>
+          <p class="font-semibold text-xl ml-20 my-5">Successfully</p>
+          <button class="bg-base-200 px-9 py-3 rounded-md ml-10" id="close-toast">Close Confirmation</button>
+        </div>
+      </dialog>
 
-       
+<!-- modal showng end -->
+<main id="main-part" class="lg:w-11/12 mx-auto my-10  ">
         <!-- card part 1 -->
-
-
-
-         <section class="my-16">
+         <section class="my-16 ml-5 ">
           <div >
-            <div class="hero min-h-screen shadow-xl rounded-lg border-2 border-gray-100">
+            <div class="hero min-h-screen shadow-xl rounded-lg border-2 border-gray-100 bg-gradient-to-r from-green-300 sticky top-0 ">
               <div class="hero-content flex-col lg:flex-row">
                <!-- img part -->
-                <img src="./assets/noakhali.png"   alt="">
+                <img src="./assets/noakhali.png" class="p-4 lg:p-0 lg:w-[480px]"  alt="">
                 <div class="ml-5">
                  
-                  <p class="py-6">
+                  <p class="lg:py-6 ">
                    <!-- balance add part part -->
                     <div class="">
-                      <button  id="donate-balance" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" alt="">
+                      <button  id="donate-balance" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2 "> <img src="./assets/coin.png" alt="">
                        <h1 > 5000</h1> <p>BDT</p></button>
                      <!-- text content -->
                     </div>
     
                     <div class="">
                         <h1 class="font-semibold text-3xl mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
-                        <p class="text-[#111111B3] my-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                        <input id="input-value" type="number" placeholder="Write Donation amount" class="w-[550px] border-2 border-base-200  p-3 rounded-lg" >
-                        <button id="donate-btn" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 w-[550px]">Donate Now</button>
+                        <p class="text-[#111111B3] my-4 font-semibold"> Kompaniganj and Hatiya upazillas (sub-districts) are fully inundated by floodwaters, while Subarna Char, 
+                          Sonaimuri, Noakhali Sadar, Kabir Hat, and Senbag upazillas have been partially affected. The flooding has 
+                          submerged houses, roads, and marketplaces, with water levels reaching waist-deep in some areas and knee
+                          deep inside homes. </p>
+                        <input id="input-value" type="number" placeholder="Write Donation amount" class="lg:w-[550px] border-2 border-base-200  p-3 rounded-lg w-[400px] " >
+                        <button id="donate-btn" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 lg:w-[550px] w-[400px]">Donate Now</button>
                     </div>
                   </p>
                   
@@ -93,60 +104,88 @@
             </div>
           </div>
          
-              <!-- Modal showing part -->
-                    <dialog id="my_modal_1" class="modal">
-                      <div class="modal-box" id="toast">
-                        <h1 class=" ml-5 text-4xl font-bold">Congrates!</h1>
-                        <img class="ml-24 my-4" src="./assets/coin.png" alt="">
-                        <p class="ml-2">You have donated to humankind</p>
-                        <p class="font-semibold text-xl ml-12 my-5">Successfully</p>
-                        <button class="bg-base-200 px-9 py-3 rounded-md ml-3" id="close-toast">Close Confirmation</button>
-                      </div>
-                    </dialog>
-
-            <!-- modal showng end -->
-
-          <div class="hero  min-h-screen  shadow-xl rounded-lg border-2 border-gray-100 my-10">
+             
+                          <!-- 2 -->
+          <div class="hero  min-h-screen  shadow-xl rounded-lg border-2 border-gray-100 my-10  bg-gradient-to-r from-green-300">
             <div class="hero-content flex-col lg:flex-row">
-              <img src="./assets/feni.png" alt="">
+              <img src="./assets/feni.png" class="p-4 lg:p-0 lg:w-[440px]" alt="">
               <div class="ml-5">
                
                 <p class="py-1">
                   <div class="">
-                    <button id="donate-balance" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" alt="">
+                    <button id="donate-balance-2" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" alt="">
                      <h1 > 4000</h1> <p>BDT</p></button>
                    <!-- text content -->
                   </div>
                  <!-- text part -->
                  <div class="">
-                  <h1 class="font-semibold text-3xl mt-4">Donate for Flood at Feni, Bangladesh</h1>
-                  <p class="text-[#111111B3] my-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                  <input  id="input-value" type="text" placeholder="Write Donation amount" class="w-[550px] border-2 border-base-200  p-3 rounded-lg" >
-                  <button id="donate-btn" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 w-[550px]">Donate Now</button>
+                  <h1 class="font-semibold text-3xl mt-4 ">Donate for Flood at Feni, Bangladesh</h1>
+                  <p class="text-[#111111B3] my-4 text-black font-semibold">Severe flooding has affected Fulgazi, 
+                    Parshuram, Chhagalnaiya, Daganbhuiyan 
+                    and Feni sadar— leaving over 100 villages 
+                    submerged and more than 100,000 people 
+                    stranded. The floods have submerged roads, 
+                    ponds, and cropland, with water reaching the 
+                    roofs and tin sheds of houses in some areas. </p>
+                  <input  id="input-value-2" type="text" placeholder="Write Donation amount" class="lg:w-[550px] border-2 border-base-200  p-3 rounded-lg w-[400px]" >
+
+                  <button id="donate-btn-2" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 lg:w-[550px] w-[400px]">Donate Now</button>
               </div>
                 </p>
                 
               </div>
             </div>
           </div>
-          <div class="hero  min-h-screen  shadow-xl rounded-lg border-2 border-gray-100">
+          <!-- 4 no card -->
+          <div class="hero  min-h-screen  shadow-xl rounded-lg border-2  border-gray-100 bg-gradient-to-r from-green-300">
             <div class="hero-content flex-col lg:flex-row">
-             <img src="./assets/quota-protest.png" alt="">
+             <img src="./assets/qota.jpeg" class="p-4 lg:p-0 " alt="">
               <div class="ml-5">
                
                 <p class="py-1">
                  <!-- text part   -->
                  <div class="">
-                  <button id="donate-balance" class="flex  px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" alt="">
+                  <button id="donate-balance-4" class="flex  px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png" alt="">
                    <h1 id="total-donate-balance"> 6500</h1> <p>BDT</p></button>
                  <!-- text content -->
                 </div>
                  <div class="">
-                  <h1 class="font-semibold text-3xl mt-4">Qouta Movement</h1>
-                  <p class="text-[#111111B3] my-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <h1 class="font-semibold text-3xl mt-4 text-black">Qouta Movement</h1>
+                  <p class="text-[#111111B3] my-4 text-black">Chhatra League and other ruling party activists attack quota protesters at Dhaka University. They also attack wounded demonstrators inside and outside Dhaka Medical College Hospital. More than 300 injured on both sides.</p>
                   <!-- input -->
-                  <input id="input-value" type="number" placeholder="Write Donation amount" class="w-[550px] border-2 border-base-200  p-3 rounded-lg" >
-                  <button id="donate-btn" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 w-[550px]">Donate Now</button>
+                  <input id="input-value-4" type="number" placeholder="Write Donation amount" class="lg:w-[550px] border-2 border-base-200  p-3 rounded-lg w-[400px]" >
+         
+                  <button id="donate-btn-4" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4  lg:w-[550px] w-[400px]">Donate Now</button>
+              </div>
+              
+                </p>
+                
+                
+              </div>
+              
+            </div>
+            
+          </div>
+          <!-- 5 no card -->
+          <div class="hero  min-h-screen  shadow-xl rounded-lg border-2 border-gray-100 my-10  bg-gradient-to-r from-green-300">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="./assets/OIP.jpeg" class="p-4 lg:p-0 rounded-lg " alt="">
+              <div class="ml-5">
+               
+                <p class="py-1">
+                  <div class="">
+                    <button id="donate-balance-5" class="flex bg-gray-100 px-6 py-2 rounded-lg text-2xl space-x-2"> <img src="./assets/coin.png"  alt="">
+                     <h1 > 4000</h1> <p>BDT</p></button>
+                   <!-- text content -->
+                  </div>
+                 <!-- text part -->
+                 <div class="">
+                  <h1 class="font-semibold text-3xl mt-4 ">Donate for Flood Moulvibazar, Bangladesh</h1>
+                  <p class="text-[#111111B3] my-4 text-black font-semibold"> More than 80,000 people have been stranded as 208 villages in Moulvibazar have gone underwater due to 
+                    rising floodwaters. In Kulaura, roads have already been damaged, and the banks and barriers of the Manu 
+                    River have been compromised, with water levels continuing to rise.</p>
+                  <input  id="input-value-5" type="text" placeholder="Write Donation amount" class="lg:w-[550px] border-2 border-base-200  p-3 rounded-lg w-[400px]" >
+                  <button id="donate-btn-5" class="text-[#111111B3]  px-6 bg-[#B4F461] font-semibold rounded-lg py-2 mt-4 lg:w-[550px] w-[400px]">Donate Now</button>
               </div>
                 </p>
                 
